@@ -18,7 +18,7 @@ def main():
         if connection.is_connected():
             cursor = connection.cursor()
 
-            cursor.execute(f"CREATE DATABASE IF NOT EXISTS {alx_book_store};")
+            cursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
             connection.commit()
 
             print(f"Database '{alx_book_store}' created successfully!")
