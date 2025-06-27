@@ -18,10 +18,10 @@ def main():
         if connection.is_connected():
             cursor = connection.cursor()
 
-            cursor.execute(f"CREATE DATABASE IF NOT EXISTS {TARGET_DB};")
+            cursor.execute(f"CREATE DATABASE IF NOT EXISTS {alx_book_store};")
             connection.commit()
 
-            print(f"Database '{TARGET_DB}' created successfully!")
+            print(f"Database '{alx_book_store}' created successfully!")
     except Error as err:
         print(f"Error: {err}")
     finally:
